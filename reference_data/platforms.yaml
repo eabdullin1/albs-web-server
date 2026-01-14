@@ -7201,3 +7201,10 @@
       production: false
       debug: false
       priority: 10
+    - name: almalinux-kitten-10-i686-beta
+      arch: i686
+      type: rpm
+      remote_url: https://build.almalinux.org/pulp/content/copr/eabdullin1-AlmaLinux-Kitten-10-i686-beta-almalinux-kitten-10-i686-dr/
+      production: false
+      debug: false
+      priority: 10

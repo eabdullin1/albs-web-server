@@ -1,0 +1,510 @@
+{
+ "api_version": "20210512",
+ "result": {
+  "initial_provision": {
+   "success": true
+  },
+  "initialize_terraform": {
+   "success": true
+  },
+  "logs": [
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f50-ea2e-7c5e-987b-27a14df950c5/",
+    "name": "system_info_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f50-eaa0-7761-a1ff-6b83de564345/",
+    "name": "initial_provision_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f50-eb50-7e0a-b248-241b057cafa6/",
+    "name": "initialize_terraform_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f50-ebbe-74f2-8d43-f7150b105c43/",
+    "name": "start_environment_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f50-f46a-7fb0-9dad-e846b2edcc4a/",
+    "name": "tmt_test__Performance_bz587635-Speed-in-Unicode_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f50-f4d5-7b93-84d0-b87974798538/",
+    "name": "tmt_test__Regression_grep-E-UTF-8-match_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f50-f570-701d-b639-775d598a70fd/",
+    "name": "tmt_test__Regression_grep-w_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f50-f5d5-77b4-b671-6deb9475057a/",
+    "name": "tmt_test__Regression_slow-grep-v-f-between-two-files_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f50-fe30-79cd-be84-26f9dfa2adc8/",
+    "name": "tmt_test__Regression_word-boundary-error-near-an-utf8-character_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f50-fed6-76d0-b88b-da5d4c67c286/",
+    "name": "tmt_test__Sanity_smoke-test_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f50-ff74-7b08-8eff-1080a9512b1c/",
+    "name": "tmt_test__Regression_bz1040710-include-not-working-as-expected_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f50-fff4-736f-aa15-f0c72972e008/",
+    "name": "tmt_test__Regression_bz1050916-malformed-output-when-coloring-is-on_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-0813-7214-aaa2-d3a1dbee117e/",
+    "name": "tmt_test__Regression_bz1256756-grep-r-has-been-broken_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-08cd-7096-a662-c2992cff885a/",
+    "name": "tmt_test__Regression_bz1287074-start-end-E-issue_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-0947-76f4-a3e9-033b1ce90bea/",
+    "name": "tmt_test__Regression_bz1567086-grep-does-not-provide-usr-bin-grep_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-0a0b-7ec0-8e87-98883b7d8b45/",
+    "name": "tmt_test__Regression_bz204255-grep-empty-pattern_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-1256-7cb7-a2ab-2a69ddd0b087/",
+    "name": "tmt_test__Regression_bz434934-segfault-with-m-and-A_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-132b-7ac7-bba0-69b4efb83203/",
+    "name": "tmt_test__Regression_bz574350-grep-w-broken-in-multibyte-locales_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-1390-790a-b3ec-f07e319d6e47/",
+    "name": "tmt_test__Regression_bz460641-korean-grep-eats-cpu_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-146b-7db5-8b98-fd529583341f/",
+    "name": "tmt_test__Regression_bz715295-process-grep-was-killed_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-1c63-7a9e-9591-d4ddc3ab6f80/",
+    "name": "tmt_test__Regression_bz797934-segfault-for-grep-Fie_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-1d31-714a-a3de-a1c5c8278b20/",
+    "name": "tmt_test__Regression_bz826997-broken-ignore-case-with-UTF8_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-1da1-744d-9e14-50f4f3dbed25/",
+    "name": "tmt_test__Regression_core-dump-with-perl-regexps-on-some-binary-file_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-1e4d-7faa-906a-3e4c091c9e82/",
+    "name": "tmt_test__Regression_core-dump-with-recurse-and-perl-switch_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-275b-7069-9bd2-27bbc886b4f4/",
+    "name": "tmt_test__Regression_grep-Fw-loop_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-2824-7ed1-915f-5304318ec499/",
+    "name": "tmt_test__Regression_grep-mem_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-28f5-743b-9e2b-c906796c1bc9/",
+    "name": "tmt_test__Regression_grep-slow-UTF-8_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-29da-75cc-8153-d9d94b70936d/",
+    "name": "tmt_test__Regression_inconsistent-w-and-alnum-behaviour_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-3344-76ad-8dd0-6f20ab1ae265/",
+    "name": "tmt_test__Regression_lowercase-uppercase-wrong-searching_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-33d7-7b44-9a82-bf3524b171c0/",
+    "name": "tmt_test__Sanity_grep-Fw-ASCII_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-34dc-7213-89fe-784e0b51287d/",
+    "name": "tmt_test__Sanity_grep-P-crash_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-3550-710b-a0ad-49c3b5730b40/",
+    "name": "tmt_tests_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-3af7-7bb8-8729-d3e78bb37c6a/",
+    "name": "stop_environment_fe77ab7e-567a-4f4e-b9dd-4a308ff668e7.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f51-3f8e-70d4-8f86-acb1071e2761/",
+    "name": "alts-fe77ab7e-567a-4f4e-b9dd-4a308ff668e7-x86_64.log",
+    "type": "test_log"
+   }
+  ],
+  "skipped_tests": [],
+  "start_environment": {
+   "success": true
+  },
+  "stop_environment": {
+   "success": true
+  },
+  "system_info": {
+   "success": true
+  },
+  "tmt": {
+   "tmt_test_/Performance/bz587635-Speed-in-Unicode": {
+    "duration": "00:00:09",
+    "name": "/Performance/bz587635-Speed-in-Unicode",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier1/public\nDuration: 00:00:09\n\n\n:: [ 20:47:09 ] :: [   PASS   ] :: Leaving tmp directory (Expected 0, got 0)\n:: [ 20:47:09 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Performance/bz587635-Speed-in-Unicode\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:09 ] :: [   LOG    ] :: Phases fingerprint:  GpTeNtEf\n:: [ 20:47:09 ] :: [   LOG    ] :: Asserts fingerprint: uL6mVwNk\nFile '/var/tmp/tmt/run/plans/tier1/public/execute/data/guest/default-0/Performance/bz587635-Speed-in-Unicode-1/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier1/public/execute/data/guest/default-0/Performance/bz587635-Speed-in-Unicode-1'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 9s\n::   Phases: 3 good, 0 bad\n::   OVERALL RESULT: PASS (/Performance/bz587635-Speed-in-Unicode)",
+    "plan": "/plans/tier1/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Regression/bz1040710-include-not-working-as-expected": {
+    "duration": "00:00:01",
+    "name": "/Regression/bz1040710-include-not-working-as-expected",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:01\n\n\n:: [ 20:47:22 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:47:22 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/bz1040710-include-not-working-as-expected\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:22 ] :: [   LOG    ] :: Phases fingerprint:  GpTeNtEf\n:: [ 20:47:22 ] :: [   LOG    ] :: Asserts fingerprint: FfeJcO6E\nFile '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz1040710-include-not-working-as-expected-1/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz1040710-include-not-working-as-expected-1'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 1s\n::   Phases: 3 good, 0 bad\n::   OVERALL RESULT: PASS (/Regression/bz1040710-include-not-working-as-expected)",
+    "plan": "/plans/tier2-tier3/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Regression/bz1050916-malformed-output-when-coloring-is-on": {
+    "duration": "00:00:01",
+    "name": "/Regression/bz1050916-malformed-output-when-coloring-is-on",
+    "note": "",
+    "output": "Result: fail\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:01\n\n\n:: [ 20:47:24 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:47:24 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/bz1050916-malformed-output-when-coloring-is-on\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:24 ] :: [   LOG    ] :: Phases fingerprint:  tIGqJLIX\n:: [ 20:47:24 ] :: [   LOG    ] :: Asserts fingerprint: zPHeuCVx\nFile '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz1050916-malformed-output-when-coloring-is-on-2/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz1050916-malformed-output-when-coloring-is-on-2'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 2s\n::   Phases: 2 good, 1 bad\n::   OVERALL RESULT: FAIL (/Regression/bz1050916-malformed-output-when-coloring-is-on)",
+    "plan": "/plans/tier2-tier3/public",
+    "result": "fail",
+    "success": false
+   },
+   "tmt_test_/Regression/bz1256756-grep-r-has-been-broken": {
+    "duration": "00:00:01",
+    "name": "/Regression/bz1256756-grep-r-has-been-broken",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:01\n\n\n:: [ 20:47:25 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:47:25 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/bz1256756-grep-r-has-been-broken\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:26 ] :: [   LOG    ] :: Phases fingerprint:  GpTeNtEf\n:: [ 20:47:26 ] :: [   LOG    ] :: Asserts fingerprint: 1U5WiVuE\nFile '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz1256756-grep-r-has-been-broken-3/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz1256756-grep-r-has-been-broken-3'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 2s\n::   Phases: 3 good, 0 bad\n::   OVERALL RESULT: PASS (/Regression/bz1256756-grep-r-has-been-broken)",
+    "plan": "/plans/tier2-tier3/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Regression/bz1287074-start-end-E-issue": {
+    "duration": "00:00:01",
+    "name": "/Regression/bz1287074-start-end-E-issue",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:01\n\n\n:: [ 20:47:27 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:47:27 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/bz1287074-start-end-E-issue\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:27 ] :: [   LOG    ] :: Phases fingerprint:  GpTeNtEf\n:: [ 20:47:28 ] :: [   LOG    ] :: Asserts fingerprint: jJDG+ZKM\nFile '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz1287074-start-end-E-issue-4/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz1287074-start-end-E-issue-4'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 1s\n::   Phases: 3 good, 0 bad\n::   OVERALL RESULT: PASS (/Regression/bz1287074-start-end-E-issue)",
+    "plan": "/plans/tier2-tier3/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Regression/bz1567086-grep-does-not-provide-usr-bin-grep": {
+    "duration": "00:00:01",
+    "name": "/Regression/bz1567086-grep-does-not-provide-usr-bin-grep",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:01\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:29 ] :: [   PASS   ] :: Command 'rpm -q --fileprovide grep | grep '/usr/bin/grep'' (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 1 good, 0 bad\n::   RESULT: PASS (Test)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/bz1567086-grep-does-not-provide-usr-bin-grep\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:29 ] :: [   LOG    ] :: Phases fingerprint:  +4gEhNYZ\n:: [ 20:47:29 ] :: [   LOG    ] :: Asserts fingerprint: +4gEhNYZ\nFile '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz1567086-grep-does-not-provide-usr-bin-grep-5/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz1567086-grep-does-not-provide-usr-bin-grep-5'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 1s\n::   Phases: 2 good, 0 bad\n::   OVERALL RESULT: PASS (/Regression/bz1567086-grep-does-not-provide-usr-bin-grep)",
+    "plan": "/plans/tier2-tier3/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Regression/bz204255-grep-empty-pattern": {
+    "duration": "00:00:01",
+    "name": "/Regression/bz204255-grep-empty-pattern",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:01\n\n\n:: [ 20:47:30 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:47:30 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/bz204255-grep-empty-pattern\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:30 ] :: [   LOG    ] :: Phases fingerprint:  GpTeNtEf\n:: [ 20:47:30 ] :: [   LOG    ] :: Asserts fingerprint: jJDG+ZKM\nFile '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz204255-grep-empty-pattern-6/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz204255-grep-empty-pattern-6'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 1s\n::   Phases: 3 good, 0 bad\n::   OVERALL RESULT: PASS (/Regression/bz204255-grep-empty-pattern)",
+    "plan": "/plans/tier2-tier3/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Regression/bz434934-segfault-with-m-and-A": {
+    "duration": "00:00:01",
+    "name": "/Regression/bz434934-segfault-with-m-and-A",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:01\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:32 ] :: [   PASS   ] :: Removing test files (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 1 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/bz434934-segfault-with-m-and-A\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:32 ] :: [   LOG    ] :: Phases fingerprint:  +4gEhNYZ\n:: [ 20:47:32 ] :: [   LOG    ] :: Asserts fingerprint: GpTeNtEf\nFile '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz434934-segfault-with-m-and-A-7/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz434934-segfault-with-m-and-A-7'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 1s\n::   Phases: 2 good, 0 bad\n::   OVERALL RESULT: PASS (/Regression/bz434934-segfault-with-m-and-A)",
+    "plan": "/plans/tier2-tier3/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Regression/bz460641-korean-grep-eats-cpu": {
+    "duration": "00:00:03",
+    "name": "/Regression/bz460641-korean-grep-eats-cpu",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:03\n\n:: [ 20:47:33 ] :: [   LOG    ] :: Runnning echo loremipsum | LC_ALL=ko_KR grep -Fi 1, with 5 seconds timeout\n:: [ 20:47:34 ] :: [   LOG    ] :: Command ended itself, I am not killing it.\n:: [ 20:47:35 ] :: [   PASS   ] :: Checking if the command passed and didn't hang and have to be killed (Assert: expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 2s\n::   Assertions: 1 good, 0 bad\n::   RESULT: PASS (Testing)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/bz460641-korean-grep-eats-cpu\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:35 ] :: [   LOG    ] :: Phases fingerprint:  L5rLAvqh\n:: [ 20:47:35 ] :: [   LOG    ] :: Asserts fingerprint: L5rLAvqh\nFile '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz460641-korean-grep-eats-cpu-8/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz460641-korean-grep-eats-cpu-8'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 3s\n::   Phases: 1 good, 0 bad\n::   OVERALL RESULT: PASS (/Regression/bz460641-korean-grep-eats-cpu)",
+    "plan": "/plans/tier2-tier3/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Regression/bz574350-grep-w-broken-in-multibyte-locales": {
+    "duration": "00:00:01",
+    "name": "/Regression/bz574350-grep-w-broken-in-multibyte-locales",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:01\n\n\n:: [ 20:47:36 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:47:36 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/bz574350-grep-w-broken-in-multibyte-locales\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:37 ] :: [   LOG    ] :: Phases fingerprint:  GpTeNtEf\n:: [ 20:47:37 ] :: [   LOG    ] :: Asserts fingerprint: GLWAc0zH\nFile '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz574350-grep-w-broken-in-multibyte-locales-9/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz574350-grep-w-broken-in-multibyte-locales-9'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 1s\n::   Phases: 3 good, 0 bad\n::   OVERALL RESULT: PASS (/Regression/bz574350-grep-w-broken-in-multibyte-locales)",
+    "plan": "/plans/tier2-tier3/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Regression/bz715295-process-grep-was-killed": {
+    "duration": "00:00:01",
+    "name": "/Regression/bz715295-process-grep-was-killed",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:01\n\n\n:: [ 20:47:38 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:47:38 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/bz715295-process-grep-was-killed\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:38 ] :: [   LOG    ] :: Phases fingerprint:  GpTeNtEf\n:: [ 20:47:38 ] :: [   LOG    ] :: Asserts fingerprint: GLWAc0zH\nFile '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz715295-process-grep-was-killed-10/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz715295-process-grep-was-killed-10'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 1s\n::   Phases: 3 good, 0 bad\n::   OVERALL RESULT: PASS (/Regression/bz715295-process-grep-was-killed)",
+    "plan": "/plans/tier2-tier3/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Regression/bz797934-segfault-for-grep-Fie": {
+    "duration": "00:00:01",
+    "name": "/Regression/bz797934-segfault-for-grep-Fie",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:01\n\n\n:: [ 20:47:40 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:47:40 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/bz797934-segfault-for-grep-Fie\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:40 ] :: [   LOG    ] :: Phases fingerprint:  GpTeNtEf\n:: [ 20:47:40 ] :: [   LOG    ] :: Asserts fingerprint: jJDG+ZKM\nFile '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz797934-segfault-for-grep-Fie-11/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz797934-segfault-for-grep-Fie-11'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 2s\n::   Phases: 3 good, 0 bad\n::   OVERALL RESULT: PASS (/Regression/bz797934-segfault-for-grep-Fie)",
+    "plan": "/plans/tier2-tier3/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Regression/bz826997-broken-ignore-case-with-UTF8": {
+    "duration": "00:00:01",
+    "name": "/Regression/bz826997-broken-ignore-case-with-UTF8",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:01\n\n\n:: [ 20:47:41 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:47:41 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/bz826997-broken-ignore-case-with-UTF8\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:41 ] :: [   LOG    ] :: Phases fingerprint:  GpTeNtEf\n:: [ 20:47:41 ] :: [   LOG    ] :: Asserts fingerprint: GLWAc0zH\nFile '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz826997-broken-ignore-case-with-UTF8-12/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/bz826997-broken-ignore-case-with-UTF8-12'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 1s\n::   Phases: 3 good, 0 bad\n::   OVERALL RESULT: PASS (/Regression/bz826997-broken-ignore-case-with-UTF8)",
+    "plan": "/plans/tier2-tier3/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Regression/core-dump-with-perl-regexps-on-some-binary-file": {
+    "duration": "00:00:01",
+    "name": "/Regression/core-dump-with-perl-regexps-on-some-binary-file",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:01\n\n\n:: [ 20:47:43 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:47:43 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/core-dump-with-perl-regexps-on-some-binary-file\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:43 ] :: [   LOG    ] :: Phases fingerprint:  GpTeNtEf\n:: [ 20:47:43 ] :: [   LOG    ] :: Asserts fingerprint: GLWAc0zH\nFile '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/core-dump-with-perl-regexps-on-some-binary-file-13/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/core-dump-with-perl-regexps-on-some-binary-file-13'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 2s\n::   Phases: 3 good, 0 bad\n::   OVERALL RESULT: PASS (/Regression/core-dump-with-perl-regexps-on-some-binary-file)",
+    "plan": "/plans/tier2-tier3/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Regression/core-dump-with-recurse-and-perl-switch": {
+    "duration": "00:00:01",
+    "name": "/Regression/core-dump-with-recurse-and-perl-switch",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:01\n\n\n:: [ 20:47:44 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:47:44 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/core-dump-with-recurse-and-perl-switch\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:44 ] :: [   LOG    ] :: Phases fingerprint:  GpTeNtEf\n:: [ 20:47:44 ] :: [   LOG    ] :: Asserts fingerprint: wG6Jb0bU\nFile '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/core-dump-with-recurse-and-perl-switch-14/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/core-dump-with-recurse-and-perl-switch-14'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 1s\n::   Phases: 3 good, 0 bad\n::   OVERALL RESULT: PASS (/Regression/core-dump-with-recurse-and-perl-switch)",
+    "plan": "/plans/tier2-tier3/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Regression/grep-E-UTF-8-match": {
+    "duration": "00:00:01",
+    "name": "/Regression/grep-E-UTF-8-match",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier1/public\nDuration: 00:00:01\n\n\n:: [ 20:47:10 ] :: [   PASS   ] :: Command 'echo abc123def456ghi | egrep \"^[[:alpha:]]{3}([[:digit:]]{3}[[:alpha:]]{3}){2}\"' (Expected 0, got 0)\n:: [ 20:47:10 ] :: [   PASS   ] :: File '/dev/fd/63' should contain '^[[:alpha:]]{3}([[:digit:]]{3}[[:alpha:]]{3}){2}' \n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Test)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/grep-E-UTF-8-match\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:10 ] :: [   LOG    ] :: Phases fingerprint:  +4gEhNYZ\n:: [ 20:47:10 ] :: [   LOG    ] :: Asserts fingerprint: GpTeNtEf\nFile '/var/tmp/tmt/run/plans/tier1/public/execute/data/guest/default-0/Regression/grep-E-UTF-8-match-2/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier1/public/execute/data/guest/default-0/Regression/grep-E-UTF-8-match-2'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 1s\n::   Phases: 2 good, 0 bad\n::   OVERALL RESULT: PASS (/Regression/grep-E-UTF-8-match)",
+    "plan": "/plans/tier1/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Regression/grep-Fw-loop": {
+    "duration": "00:00:03",
+    "name": "/Regression/grep-Fw-loop",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:03\n\n\n:: [ 20:47:48 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:47:48 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/grep-Fw-loop\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:48 ] :: [   LOG    ] :: Phases fingerprint:  GpTeNtEf\n:: [ 20:47:48 ] :: [   LOG    ] :: Asserts fingerprint: wG6Jb0bU\nFile '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/grep-Fw-loop-15/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/grep-Fw-loop-15'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 3s\n::   Phases: 3 good, 0 bad\n::   OVERALL RESULT: PASS (/Regression/grep-Fw-loop)",
+    "plan": "/plans/tier2-tier3/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Regression/grep-mem": {
+    "duration": "00:00:01",
+    "name": "/Regression/grep-mem",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:01\n\n\n:: [ 20:47:49 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:47:49 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/grep-mem\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:50 ] :: [   LOG    ] :: Phases fingerprint:  GpTeNtEf\n:: [ 20:47:50 ] :: [   LOG    ] :: Asserts fingerprint: uL6mVwNk\nFile '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/grep-mem-16/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/grep-mem-16'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 2s\n::   Phases: 3 good, 0 bad\n::   OVERALL RESULT: PASS (/Regression/grep-mem)",
+    "plan": "/plans/tier2-tier3/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Regression/grep-slow-UTF-8": {
+    "duration": "00:00:10",
+    "name": "/Regression/grep-slow-UTF-8",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:10\n\n\n:: [ 20:48:00 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:48:00 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/grep-slow-UTF-8\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:48:00 ] :: [   LOG    ] :: Phases fingerprint:  GpTeNtEf\n:: [ 20:48:00 ] :: [   LOG    ] :: Asserts fingerprint: hbBXme7J\nFile '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/grep-slow-UTF-8-17/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/grep-slow-UTF-8-17'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 10s\n::   Phases: 3 good, 0 bad\n::   OVERALL RESULT: PASS (/Regression/grep-slow-UTF-8)",
+    "plan": "/plans/tier2-tier3/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Regression/grep-w": {
+    "duration": "00:00:01",
+    "name": "/Regression/grep-w",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier1/public\nDuration: 00:00:01\n\n\n:: [ 20:47:12 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:47:12 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/grep-w\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:12 ] :: [   LOG    ] :: Phases fingerprint:  GpTeNtEf\n:: [ 20:47:12 ] :: [   LOG    ] :: Asserts fingerprint: qYP1zJ4N\nFile '/var/tmp/tmt/run/plans/tier1/public/execute/data/guest/default-0/Regression/grep-w-3/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier1/public/execute/data/guest/default-0/Regression/grep-w-3'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 1s\n::   Phases: 3 good, 0 bad\n::   OVERALL RESULT: PASS (/Regression/grep-w)",
+    "plan": "/plans/tier1/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Regression/inconsistent-w-and-alnum-behaviour": {
+    "duration": "00:00:01",
+    "name": "/Regression/inconsistent-w-and-alnum-behaviour",
+    "note": "",
+    "output": "Result: fail\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:01\n\n\n:: [ 20:48:01 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:48:01 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/inconsistent-w-and-alnum-behaviour\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:48:01 ] :: [   LOG    ] :: Phases fingerprint:  tIGqJLIX\n:: [ 20:48:01 ] :: [   LOG    ] :: Asserts fingerprint: 2CRjP4hE\nFile '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/inconsistent-w-and-alnum-behaviour-18/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/inconsistent-w-and-alnum-behaviour-18'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 1s\n::   Phases: 2 good, 1 bad\n::   OVERALL RESULT: FAIL (/Regression/inconsistent-w-and-alnum-behaviour)",
+    "plan": "/plans/tier2-tier3/public",
+    "result": "fail",
+    "success": false
+   },
+   "tmt_test_/Regression/lowercase-uppercase-wrong-searching": {
+    "duration": "00:00:01",
+    "name": "/Regression/lowercase-uppercase-wrong-searching",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:01\n\n\n:: [ 20:48:03 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:48:03 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/lowercase-uppercase-wrong-searching\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:48:03 ] :: [   LOG    ] :: Phases fingerprint:  GpTeNtEf\n:: [ 20:48:03 ] :: [   LOG    ] :: Asserts fingerprint: MDRRoC3/\nFile '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/lowercase-uppercase-wrong-searching-19/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Regression/lowercase-uppercase-wrong-searching-19'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 1s\n::   Phases: 3 good, 0 bad\n::   OVERALL RESULT: PASS (/Regression/lowercase-uppercase-wrong-searching)",
+    "plan": "/plans/tier2-tier3/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Regression/slow-grep-v-f-between-two-files": {
+    "duration": "00:00:03",
+    "name": "/Regression/slow-grep-v-f-between-two-files",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier1/public\nDuration: 00:00:03\n\n\n:: [ 20:47:15 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:47:15 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/slow-grep-v-f-between-two-files\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:15 ] :: [   LOG    ] :: Phases fingerprint:  GpTeNtEf\n:: [ 20:47:15 ] :: [   LOG    ] :: Asserts fingerprint: GLWAc0zH\nFile '/var/tmp/tmt/run/plans/tier1/public/execute/data/guest/default-0/Regression/slow-grep-v-f-between-two-files-4/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier1/public/execute/data/guest/default-0/Regression/slow-grep-v-f-between-two-files-4'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 3s\n::   Phases: 3 good, 0 bad\n::   OVERALL RESULT: PASS (/Regression/slow-grep-v-f-between-two-files)",
+    "plan": "/plans/tier1/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Regression/word-boundary-error-near-an-utf8-character": {
+    "duration": "00:00:01",
+    "name": "/Regression/word-boundary-error-near-an-utf8-character",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier1/public\nDuration: 00:00:01\n\n\n:: [ 20:47:17 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:47:17 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Regression/word-boundary-error-near-an-utf8-character\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:17 ] :: [   LOG    ] :: Phases fingerprint:  GpTeNtEf\n:: [ 20:47:17 ] :: [   LOG    ] :: Asserts fingerprint: wG6Jb0bU\nFile '/var/tmp/tmt/run/plans/tier1/public/execute/data/guest/default-0/Regression/word-boundary-error-near-an-utf8-character-5/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier1/public/execute/data/guest/default-0/Regression/word-boundary-error-near-an-utf8-character-5'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 1s\n::   Phases: 3 good, 0 bad\n::   OVERALL RESULT: PASS (/Regression/word-boundary-error-near-an-utf8-character)",
+    "plan": "/plans/tier1/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Sanity/grep-Fw-ASCII": {
+    "duration": "00:00:01",
+    "name": "/Sanity/grep-Fw-ASCII",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:01\n\n\n:: [ 20:48:04 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:48:04 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Sanity/grep-Fw-ASCII\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:48:04 ] :: [   LOG    ] :: Phases fingerprint:  GpTeNtEf\n:: [ 20:48:04 ] :: [   LOG    ] :: Asserts fingerprint: jn0ChV+x\nFile '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Sanity/grep-Fw-ASCII-20/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Sanity/grep-Fw-ASCII-20'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 1s\n::   Phases: 3 good, 0 bad\n::   OVERALL RESULT: PASS (/Sanity/grep-Fw-ASCII)",
+    "plan": "/plans/tier2-tier3/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Sanity/grep-P-crash": {
+    "duration": "00:00:01",
+    "name": "/Sanity/grep-P-crash",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:01\n\n\n:: [ 20:48:06 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:48:06 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 2 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Sanity/grep-P-crash\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:48:06 ] :: [   LOG    ] :: Phases fingerprint:  GpTeNtEf\n:: [ 20:48:06 ] :: [   LOG    ] :: Asserts fingerprint: wG6Jb0bU\nFile '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Sanity/grep-P-crash-21/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier2-tier3/public/execute/data/guest/default-0/Sanity/grep-P-crash-21'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 1s\n::   Phases: 3 good, 0 bad\n::   OVERALL RESULT: PASS (/Sanity/grep-P-crash)",
+    "plan": "/plans/tier2-tier3/public",
+    "result": "pass",
+    "success": true
+   },
+   "tmt_test_/Sanity/smoke-test": {
+    "duration": "00:00:01",
+    "name": "/Sanity/smoke-test",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/tier1/public\nDuration: 00:00:01\n\n:: [ 20:47:19 ] :: [   PASS   ] :: Removing files (Expected 0, got 0)\n:: [ 20:47:19 ] :: [   PASS   ] :: Command 'popd' (Expected 0, got 0)\n:: [ 20:47:19 ] :: [   PASS   ] :: Removing tmp directory (Expected 0, got 0)\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 0s\n::   Assertions: 3 good, 0 bad\n::   RESULT: PASS (Cleanup)\n\n\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   /Sanity/smoke-test\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n\n:: [ 20:47:19 ] :: [   LOG    ] :: Phases fingerprint:  GpTeNtEf\n:: [ 20:47:19 ] :: [   LOG    ] :: Asserts fingerprint: Mf0VrTCW\nFile '/var/tmp/tmt/run/plans/tier1/public/execute/data/guest/default-0/Sanity/smoke-test-6/journal.xml' already stored in '/var/tmp/tmt/run/plans/tier1/public/execute/data/guest/default-0/Sanity/smoke-test-6'.\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n::   Duration: 2s\n::   Phases: 3 good, 0 bad\n::   OVERALL RESULT: PASS (/Sanity/smoke-test)",
+    "plan": "/plans/tier1/public",
+    "result": "pass",
+    "success": true
+   }
+  },
+  "tmt_tests": {
+   "commit": "1531e510fe5f35bef344c637fefced85038c69f7",
+   "context": {
+    "arch": "x86_64",
+    "component": "grep",
+    "distro": "almalinux-9.9,centos-stream-9,rhel-9.9",
+    "initiator": "albs"
+   },
+   "counts": {
+    "fail": 2,
+    "pass": 25
+   },
+   "excluded_plans": [],
+   "installed_packages": [
+    "grep-3.6-5.el9.x86_64"
+   ],
+   "plans": [
+    {
+     "counts": {
+      "pass": 6
+     },
+     "name": "/plans/tier1/public"
+    },
+    {
+     "counts": {
+      "fail": 2,
+      "pass": 19
+     },
+     "name": "/plans/tier2-tier3/public"
+    },
+    {
+     "counts": {},
+     "name": "/plans/others/public"
+    }
+   ],
+   "success": true,
+   "tmt_exit_code": 1,
+   "url": "https://git.almalinux.org/tests/grep.git"
+  }
+ },
+ "stats": {
+  "initial_provision": {
+   "delta": 193.230117,
+   "finish_ts": "2026-11-24T20:46:21.225518",
+   "start_ts": "2026-11-24T20:43:07.995401"
+  },
+  "initialize_terraform": {
+   "delta": 0.271083,
+   "finish_ts": "2026-11-24T20:43:01.185698",
+   "start_ts": "2026-11-24T20:43:00.914615"
+  },
+  "start_environment": {
+   "delta": 6.792603,
+   "finish_ts": "2026-11-24T20:43:07.979751",
+   "start_ts": "2026-11-24T20:43:01.187148"
+  },
+  "started_at": "2026-11-24T20:43:00.908996",
+  "stop_environment": {
+   "delta": 1.539346,
+   "finish_ts": "2026-11-24T20:48:08.767081",
+   "start_ts": "2026-11-24T20:48:07.227735"
+  },
+  "system_info": {
+   "delta": 1.719247,
+   "finish_ts": "2026-11-24T20:46:22.945814",
+   "start_ts": "2026-11-24T20:46:21.226567"
+  },
+  "tmt_tests": {
+   "delta": 104.278167,
+   "finish_ts": "2026-11-24T20:48:07.227147",
+   "start_ts": "2026-11-24T20:46:22.948980"
+  }
+ }
+}

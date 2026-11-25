@@ -296,3 +296,30 @@ skip:
     assert old_tasks
     for task in old_tasks:
         assert 'skipped_tests' not in payloads[task.id]
+
+
+CHAN_TMT_PLANS = """
+tmt:
+  plans: [/plans/tier1/public]
+"""
+
+
+async def test_old_config_rules_with_tmt_section(
+    async_session: AsyncSession,
+    regular_build: models.Build,
+    build_done,
+    package_tests_configs: PackageTestsConfigs,
+):
+    # The rules keep working next to a tmt section
+    package_tests_configs['chan'] = CHAN_CONFIG + CHAN_TMT_PLANS
+    task = await complete_chan_test_task(
+        async_session,
+        regular_build,
+        install_success=False,
+    )
+    assert task.status == TaskStatus.COMPLETED
+    assert 'error' not in task.alts_response['tests_config']
+    assert task.alts_response['tests_config']['expected_failures'] == [{
+        'test': 'install_package',
+        'reason': 'chan conflicts with a package of the test image',
+    }]

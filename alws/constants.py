@@ -112,6 +112,14 @@ class TestTaskStatus(enum.IntEnum):
     CANCELLED = 5
 
 
+class TestTaskKind(str, enum.Enum):
+    # Tests of one binary package of the build task
+    PACKAGE = 'package'
+    # tmt tests of the source package (D-3): one test task per build task,
+    # i.e. per build, platform and architecture
+    COMPONENT = 'component'
+
+
 class TestCaseStatus(enum.IntEnum):
     FAILED = 1
     DONE = 2

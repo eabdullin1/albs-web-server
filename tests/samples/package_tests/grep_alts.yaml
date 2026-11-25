@@ -1,0 +1,11 @@
+# ALTS tests config of grep, read by ALBS (https://build.almalinux.org).
+# Format: https://github.com/AlmaLinux/albs-web-server/blob/master/alws/documentation/Tests/Package%20tests%20config.md
+version: 1
+
+tmt:
+  # All public plans that CentOS Stream dist-git (rpms/grep c8s, c9s, c10s)
+  # imports from this repository; the same on every platform.
+  plans:
+    - /plans/tier1/public
+    - /plans/tier2-tier3/public
+    - /plans/others/public

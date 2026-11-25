@@ -1,0 +1,157 @@
+{
+ "api_version": "20210512",
+ "result": {
+  "initial_provision": {
+   "success": true
+  },
+  "initialize_terraform": {
+   "success": true
+  },
+  "logs": [
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f58-c303-7ca2-b205-bc7f53ef135a/",
+    "name": "start_environment_71e66341-4dfd-42e7-9dbb-5c4323abd207.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f58-c35b-75fd-8b9e-e44b8f7984ee/",
+    "name": "initial_provision_71e66341-4dfd-42e7-9dbb-5c4323abd207.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f58-c452-784c-a84c-e81937c1c129/",
+    "name": "initialize_terraform_71e66341-4dfd-42e7-9dbb-5c4323abd207.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f58-c4a8-7491-ad30-1acfa1c8156f/",
+    "name": "system_info_71e66341-4dfd-42e7-9dbb-5c4323abd207.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f58-cd60-733a-bcb6-6d5e2f5e6a6a/",
+    "name": "tmt_test__e2e_pass_71e66341-4dfd-42e7-9dbb-5c4323abd207.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f58-cde4-7f0a-aa99-bee4a0843691/",
+    "name": "tmt_test__e2e_fail_71e66341-4dfd-42e7-9dbb-5c4323abd207.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f58-ce94-795c-b125-93d0440552cf/",
+    "name": "stop_environment_71e66341-4dfd-42e7-9dbb-5c4323abd207.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f58-cf16-7c1b-b767-7d0171a67eb7/",
+    "name": "tmt_tests_71e66341-4dfd-42e7-9dbb-5c4323abd207.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f58-d4b7-734a-94e2-5cb3436b299e/",
+    "name": "alts-71e66341-4dfd-42e7-9dbb-5c4323abd207-x86_64.log",
+    "type": "test_log"
+   }
+  ],
+  "skipped_tests": [
+   "tmt_test_/e2e/skipme"
+  ],
+  "start_environment": {
+   "success": true
+  },
+  "stop_environment": {
+   "success": true
+  },
+  "system_info": {
+   "success": true
+  },
+  "tmt": {
+   "tmt_test_/e2e/fail": {
+    "duration": "00:00:00",
+    "name": "/e2e/fail",
+    "note": "",
+    "output": "Result: fail\nPlan: /plans/e2e/info\nDuration: 00:00:00",
+    "plan": "/plans/e2e/info",
+    "result": "fail",
+    "success": false
+   },
+   "tmt_test_/e2e/pass": {
+    "duration": "00:00:00",
+    "name": "/e2e/pass",
+    "note": "",
+    "output": "Result: pass\nPlan: /plans/e2e/gating\nDuration: 00:00:00",
+    "plan": "/plans/e2e/gating",
+    "result": "pass",
+    "success": true
+   }
+  },
+  "tmt_tests": {
+   "commit": "6d5e624ec018c2f993e6f66fec8a6d0d90ff66fd",
+   "context": {
+    "arch": "x86_64",
+    "component": "grep",
+    "distro": "almalinux-9.9,centos-stream-9,rhel-9.9",
+    "initiator": "albs"
+   },
+   "counts": {
+    "fail": 1,
+    "pass": 1
+   },
+   "excluded_plans": [],
+   "installed_packages": [
+    "grep-3.6-5.el9.x86_64"
+   ],
+   "plans": [
+    {
+     "counts": {
+      "pass": 1
+     },
+     "name": "/plans/e2e/gating"
+    },
+    {
+     "counts": {
+      "fail": 1
+     },
+     "name": "/plans/e2e/info"
+    }
+   ],
+   "success": true,
+   "tmt_exit_code": 1,
+   "url": "https://git.example.org/tests/grep.git"
+  }
+ },
+ "stats": {
+  "initial_provision": {
+   "delta": 197.759384,
+   "finish_ts": "2026-11-24T20:55:58.288494",
+   "start_ts": "2026-11-24T20:52:40.529110"
+  },
+  "initialize_terraform": {
+   "delta": 0.262155,
+   "finish_ts": "2026-11-24T20:52:39.484813",
+   "start_ts": "2026-11-24T20:52:39.222658"
+  },
+  "start_environment": {
+   "delta": 1.024674,
+   "finish_ts": "2026-11-24T20:52:40.510780",
+   "start_ts": "2026-11-24T20:52:39.486106"
+  },
+  "started_at": "2026-11-24T20:52:39.216837",
+  "stop_environment": {
+   "delta": 1.600476,
+   "finish_ts": "2026-11-24T20:56:43.257582",
+   "start_ts": "2026-11-24T20:56:41.657106"
+  },
+  "system_info": {
+   "delta": 1.749512,
+   "finish_ts": "2026-11-24T20:56:00.039091",
+   "start_ts": "2026-11-24T20:55:58.289579"
+  },
+  "tmt_tests": {
+   "delta": 41.614198,
+   "finish_ts": "2026-11-24T20:56:41.656562",
+   "start_ts": "2026-11-24T20:56:00.042364"
+  }
+ }
+}

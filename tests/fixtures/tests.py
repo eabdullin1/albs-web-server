@@ -65,22 +65,34 @@ def gitea_contents_entry(package_name: str, content: str) -> dict:
     }
 
 
+# Head of the tests branch of every package with a config in the fake Gitea
+TESTS_COMMIT = '0123456789abcdef0123456789abcdef01234567'
+
+
 class PackageTestsConfigs(dict):
     """Package tests configs a fake Gitea serves, by package name.
 
     A string is the content of the config, an exception is raised instead
-    of answering, anything else is answered as is.
+    of answering, anything else is answered as is. The config is the same
+    at every commit unless ``at_commit[(package, commit)]`` says otherwise.
+    The head of the tests branch of a package with a config is
+    ``heads.get(package, TESTS_COMMIT)``.
     """
 
     def __init__(self):
         super().__init__()
-        # Packages Gitea has been asked about
+        # Packages Gitea has been asked about the config of, as
+        # <package>@<commit> for a commit
         self.lookups = []
+        self.at_commit = {}
+        self.heads = {}
 
     def __setitem__(self, package_name: str, value: typing.Any):
         super().__setitem__(package_name, value)
         # Like a config pushed to git, but seen right away
-        package_tests._lookups_cache.pop(package_name, None)
+        for key in list(package_tests._lookups_cache):
+            if key == package_name or key.startswith(f'{package_name}@'):
+                package_tests._lookups_cache.pop(key)
 
 
 @pytest.fixture(autouse=True)
@@ -94,21 +106,36 @@ def package_tests_configs(
     """
     configs = PackageTestsConfigs()
 
-    async def fetch_config_file(package_name: str):
-        configs.lookups.append(package_name)
+    async def fetch_config_file(package_name: str, ref=None):
+        configs.lookups.append(f'{package_name}@{ref}' if ref else package_name)
         if package_name not in configs:
             return None
-        value = configs[package_name]
+        value = configs.at_commit.get(
+            (package_name, ref), configs[package_name]
+        )
         if isinstance(value, Exception):
             raise value
         if isinstance(value, str):
             return gitea_contents_entry(package_name, value)
         return value
 
+    async def fetch_branch_commit(package_name: str):
+        if package_name not in configs:
+            return None
+        head = configs.heads.get(package_name, TESTS_COMMIT)
+        if isinstance(head, Exception):
+            raise head
+        return head
+
     monkeypatch.setattr(
         package_tests,
         '_fetch_config_file',
         fetch_config_file,
+    )
+    monkeypatch.setattr(
+        package_tests,
+        '_fetch_branch_commit',
+        fetch_branch_commit,
     )
     package_tests._lookups_cache.clear()
     yield configs

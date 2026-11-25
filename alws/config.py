@@ -1,5 +1,5 @@
 import urllib.parse
-from typing import Annotated, Optional
+from typing import Annotated, List, Optional
 
 from pydantic import Field, field_validator
 from pydantic_settings import BaseSettings
@@ -34,6 +34,27 @@ class Settings(BaseSettings):
     package_tests_branch: str = 'main'
     package_tests_config_path: str = 'alts.yaml'
     package_tests_cache_ttl: int = 300  # seconds
+    # The tmt section of the config is sent to ALTS only when tmt is
+    # enabled, and only for the platforms and arches matching these
+    # shell-style patterns (JSON lists in the environment); an empty list
+    # matches nothing. Every AlmaLinux platform and every arch it's built
+    # for by default, except i686 and riscv64. These settings affect
+    # component test tasks only: package test tasks are created on every
+    # arch as before.
+    package_tests_tmt_enabled: bool = True
+    package_tests_tmt_platforms: List[str] = [
+        'AlmaLinux-8',
+        'AlmaLinux-9',
+        'AlmaLinux-10',
+        'AlmaLinux-Kitten-10',
+    ]
+    package_tests_tmt_arches: List[str] = [
+        'x86_64',
+        'x86_64_v2',
+        'aarch64',
+        'ppc64le',
+        's390x',
+    ]
 
     package_beholder_enabled: bool = True
     beholder_host: str = 'http://beholder-web:5000'

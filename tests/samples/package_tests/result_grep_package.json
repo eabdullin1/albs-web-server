@@ -1,0 +1,110 @@
+{
+ "api_version": "20210512",
+ "result": {
+  "initial_provision": {
+   "success": true
+  },
+  "initialize_terraform": {
+   "success": true
+  },
+  "install_package": {
+   "success": true
+  },
+  "logs": [
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f46-82f9-7adf-90ed-f50f230fafb8/",
+    "name": "start_environment_04f5c0bb-15d8-4047-b5c1-fa4a6ac780a3.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f46-8382-72db-a7a8-3b7be69c8404/",
+    "name": "initial_provision_04f5c0bb-15d8-4047-b5c1-fa4a6ac780a3.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f46-8422-7da3-a62b-71106986cdd6/",
+    "name": "system_info_04f5c0bb-15d8-4047-b5c1-fa4a6ac780a3.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f46-849f-7f98-95b6-526421113d95/",
+    "name": "initialize_terraform_04f5c0bb-15d8-4047-b5c1-fa4a6ac780a3.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f46-8b56-77c9-89b6-373261b13572/",
+    "name": "install_package_04f5c0bb-15d8-4047-b5c1-fa4a6ac780a3.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f46-8bfd-7712-ba86-3dbd9263ddd6/",
+    "name": "tests_package_integrity_tests_04f5c0bb-15d8-4047-b5c1-fa4a6ac780a3.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f46-8c79-779b-8274-3fe0cb2a6e67/",
+    "name": "stop_environment_04f5c0bb-15d8-4047-b5c1-fa4a6ac780a3.log",
+    "type": "test_log"
+   },
+   {
+    "href": "/pulp/api/v3/artifacts/01a20f46-91ac-772e-9c0b-59e4d59c40fa/",
+    "name": "alts-04f5c0bb-15d8-4047-b5c1-fa4a6ac780a3-x86_64.log",
+    "type": "test_log"
+   }
+  ],
+  "skipped_tests": [],
+  "start_environment": {
+   "success": true
+  },
+  "stop_environment": {
+   "success": true
+  },
+  "system_info": {
+   "success": true
+  },
+  "tests": {
+   "package_integrity_tests": {
+    "output": "1..4\nok 1 tests/test_package_is_correct.py::test_package_is_installed[local]\nnot ok 2 tests/test_package_is_correct.py::test_all_package_files_exist[local]\n# tests/test_package_is_correct.py::test_all_package_files_exist[local]:0: check bool(False): File is absent on the file system: /usr/share/doc/grep\n# \n# FAILURE: check bool(False): File is absent on the file system: /usr/share/doc/grep\n# tests/test_package_is_correct.py:81 in test_all_package_files_exist() -> check.is_true(\n# \n# FAILURE: check bool(False): File is absent on the file system: /usr/share/doc/grep/AUTHORS\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/doc/grep/NEWS\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/doc/grep/README\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/doc/grep/THANKS\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/doc/grep/TODO\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/info/grep.info.gz\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/af/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/be/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/bg/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/ca/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/cs/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/da/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/de/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/el/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/eo/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/es/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/et/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/eu/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/fi/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/fr/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/ga/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/gl/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/he/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/hr/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/hu/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/id/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/it/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/ja/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/ko/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/ky/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/lt/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/nb/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/nl/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/pa/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/pl/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/pt/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/pt_BR/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/ro/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/ru/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/sk/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/sl/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/sr/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/sv/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/th/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/tr/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/uk/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/vi/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/zh_CN/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/locale/zh_TW/LC_MESSAGES/grep.mo\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/man/man1/egrep.1.gz\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/man/man1/fgrep.1.gz\n# FAILURE: check bool(False): File is absent on the file system: /usr/share/man/man1/grep.1.gz\n# ------------------------------------------------------------\n# Failed Checks: 53\n# --- Captured Log ---\n# \n# --- Captured Out ---\n# \n# --- Captured Err ---\n#\nok 3 tests/test_package_is_correct.py::test_binaries_have_all_dependencies[local]\nok 4 tests/test_package_is_correct.py::test_check_rpath_is_correct[local]\n",
+    "success": false
+   }
+  }
+ },
+ "stats": {
+  "initial_provision": {
+   "delta": 76.982131,
+   "finish_ts": "2026-11-24T20:36:00.920507",
+   "start_ts": "2026-11-24T20:34:43.938376"
+  },
+  "initialize_terraform": {
+   "delta": 3.934832,
+   "finish_ts": "2026-11-24T20:34:42.886848",
+   "start_ts": "2026-11-24T20:34:38.952016"
+  },
+  "install_package": {
+   "delta": 42.149813,
+   "finish_ts": "2026-11-24T20:36:44.560676",
+   "start_ts": "2026-11-24T20:36:02.410863"
+  },
+  "package_integrity_tests": {
+   "delta": 1.016475,
+   "finish_ts": "2026-11-24T20:36:45.578248",
+   "start_ts": "2026-11-24T20:36:44.561773"
+  },
+  "start_environment": {
+   "delta": 1.037005,
+   "finish_ts": "2026-11-24T20:34:43.925660",
+   "start_ts": "2026-11-24T20:34:42.888655"
+  },
+  "started_at": "2026-11-24T20:34:38.941354",
+  "stop_environment": {
+   "delta": 1.638856,
+   "finish_ts": "2026-11-24T20:36:47.218752",
+   "start_ts": "2026-11-24T20:36:45.579896"
+  },
+  "system_info": {
+   "delta": 1.486627,
+   "finish_ts": "2026-11-24T20:36:02.408176",
+   "start_ts": "2026-11-24T20:36:00.921549"
+  }
+ }
+}

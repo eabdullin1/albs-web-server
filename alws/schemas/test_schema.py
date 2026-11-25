@@ -21,6 +21,9 @@ class TestTask(BaseModel):
     status: int
     revision: int
     skipped_tests: Optional[List[str]] = None
+    # package or component (tmt tests of the source package)
+    kind: str = 'package'
+    package_tests: Optional[dict] = None
     alts_response: Optional[dict] = None
     performance_stats: Optional[List[PerformanceStats]] = None
 
@@ -53,3 +56,8 @@ class TestTaskPayload(BaseModel):
     test_configuration: Optional[dict] = None
     # Tests not to run, as named in the package tests config
     skipped_tests: Optional[List[str]] = None
+    # Only in component test tasks: the tests repository, its commit, the
+    # build packages and the tmt plans to run, see
+    # alws.utils.package_tests.build_package_tests_payload. A dict, so that
+    # the builder alone defines what ALTS gets.
+    package_tests: Optional[dict] = None

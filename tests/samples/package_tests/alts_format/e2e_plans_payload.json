@@ -1,0 +1,46 @@
+{
+  "bs_task_id": 1002,
+  "runner_type": "docker",
+  "dist_name": "almalinux",
+  "dist_version": "9",
+  "dist_arch": "x86_64",
+  "package_channel": null,
+  "test_configuration": null,
+  "test_flavor": null,
+  "repositories": [
+    {
+      "name": "almalinux-9-x86_64-1001-br",
+      "baseurl": "https://build-repos.example.org/almalinux-9-x86_64-1001-br/"
+    }
+  ],
+  "package_name": "grep",
+  "package_version": "3.6-5.el9",
+  "package_epoch": null,
+  "module_name": null,
+  "module_stream": null,
+  "module_version": null,
+  "callback_href": "/api/v1/tests/1002/result/",
+  "verbose": false,
+  "skipped_tests": [
+    "tmt_test_/e2e/skipme"
+  ],
+  "package_tests": {
+    "url": "https://git.almalinux.org/tests/grep.git",
+    "commit": "e2e0111111111111111111111111111111111111",
+    "packages": [
+      "grep-3.6-5.el9.x86_64"
+    ],
+    "tmt": {
+      "plans": [
+        "/plans/e2e/gating",
+        "/plans/e2e/info",
+        "/plans/e2e/internal"
+      ],
+      "context": {
+        "trigger": "build",
+        "component": "grep"
+      },
+      "environment": {}
+    }
+  }
+}

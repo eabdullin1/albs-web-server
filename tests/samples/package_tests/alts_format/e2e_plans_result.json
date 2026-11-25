@@ -1,0 +1,103 @@
+{
+  "initial_provision": {
+    "success": true
+  },
+  "initialize_terraform": {
+    "success": true
+  },
+  "skipped_tests": [
+    "tmt_test_/e2e/skipme",
+    "tmt_test_/e2e/skipped-by-tmt"
+  ],
+  "start_environment": {
+    "success": true
+  },
+  "stop_environment": {
+    "success": true
+  },
+  "system_info": {
+    "success": true
+  },
+  "tmt": {
+    "tmt_test_/e2e/fail": {
+      "duration": "00:00:01",
+      "name": "/e2e/fail",
+      "note": "fail in the test phase",
+      "output": "Result: fail\nPlan: /plans/e2e/gating\nDuration: 00:00:01\nNote: fail in the test phase",
+      "plan": "/plans/e2e/gating",
+      "result": "fail",
+      "success": false
+    },
+    "tmt_test_/e2e/pass@/plans/e2e/gating": {
+      "duration": "00:00:01",
+      "name": "/e2e/pass",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/e2e/gating\nDuration: 00:00:01",
+      "plan": "/plans/e2e/gating",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/e2e/pass@/plans/e2e/info": {
+      "duration": "00:00:01",
+      "name": "/e2e/pass",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/e2e/info\nDuration: 00:00:01",
+      "plan": "/plans/e2e/info",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/e2e/warn": {
+      "duration": "00:00:01",
+      "name": "/e2e/warn",
+      "note": "",
+      "output": "Result: warn\nPlan: /plans/e2e/info\nDuration: 00:00:01",
+      "plan": "/plans/e2e/info",
+      "result": "warn",
+      "success": true
+    }
+  },
+  "tmt_tests": {
+    "commit": "e2e0111111111111111111111111111111111111",
+    "context": {
+      "arch": "x86_64",
+      "component": "grep",
+      "distro": "almalinux-9.9,centos-stream-9,rhel-9.9",
+      "initiator": "albs",
+      "trigger": "build"
+    },
+    "counts": {
+      "fail": 1,
+      "pass": 2,
+      "warn": 1
+    },
+    "excluded_plans": [
+      {
+        "name": "/plans/e2e/internal",
+        "reason": "internal plan"
+      }
+    ],
+    "installed_packages": [
+      "grep-3.6-5.el9.x86_64"
+    ],
+    "plans": [
+      {
+        "counts": {
+          "fail": 1,
+          "pass": 1
+        },
+        "name": "/plans/e2e/gating"
+      },
+      {
+        "counts": {
+          "pass": 1,
+          "skip": 1,
+          "warn": 1
+        },
+        "name": "/plans/e2e/info"
+      }
+    ],
+    "success": true,
+    "tmt_exit_code": 1,
+    "url": "https://git.almalinux.org/tests/grep.git"
+  }
+}

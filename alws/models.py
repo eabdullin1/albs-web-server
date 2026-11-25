@@ -1165,6 +1165,20 @@ class TestTask(TimeMixin, Base):
     skipped_tests: Mapped[Optional[List[str]]] = mapped_column(
         sqlalchemy.ARRAY(sqlalchemy.TEXT, dimensions=1), nullable=True
     )
+    # TestTaskKind: a binary package, or the tmt tests of the source
+    # package, which is then the package_name
+    kind: Mapped[str] = mapped_column(
+        sqlalchemy.TEXT,
+        nullable=False,
+        default='package',
+        server_default='package',
+    )
+    # package_tests of the ALTS payload of a component test task: the
+    # tests repository, the commit of it the task tests, the build packages
+    # and the tmt plans; see alws.utils.package_tests
+    package_tests: Mapped[Optional[Dict[str, Any]]] = mapped_column(
+        JSONB, nullable=True
+    )
     artifacts: Mapped[List["TestTaskArtifact"]] = relationship(
         "TestTaskArtifact", back_populates="test_task"
     )

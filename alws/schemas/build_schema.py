@@ -162,6 +162,9 @@ class BuildTaskTestTask(BaseModel):
     status: int
     revision: int
     performance_stats: typing.Optional[typing.List[PerformanceStats]] = None
+    # package or component (tmt tests of the source package), as in
+    # /tests/<build_task_id>/latest
+    kind: str = 'package'
 
     class Config:
         from_attributes = True

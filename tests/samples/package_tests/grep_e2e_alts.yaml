@@ -1,0 +1,8 @@
+version: 1
+tmt:
+  plans: [/plans/e2e/gating, /plans/e2e/info]
+skip:
+  - tests: ['tmt_test_/e2e/skipme']
+    reason: 'e2e: must not be run'
+  - packages: ['grep-debug*']
+    reason: 'e2e: debug packages are not tested'

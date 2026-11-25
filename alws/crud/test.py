@@ -16,17 +16,22 @@ from sqlalchemy.sql.expression import func
 
 from alws import models
 from alws.config import settings
-from alws.constants import BuildTaskStatus, TestTaskStatus
+from alws.constants import BuildTaskStatus, TestTaskKind, TestTaskStatus
 from alws.pulp_models import RpmPackage
 from alws.schemas import test_schema
 from alws.utils.alts_client import AltsClient
 from alws.utils.file_utils import download_file
 from alws.utils.package_tests import (
     PackageTestsConfigLookup,
+    build_package_tests_payload,
     evaluate_test_result,
     get_matched_rules,
+    get_package_spec,
     get_package_tests_config,
     get_source_package_name,
+    get_tests_commit,
+    is_tmt_enabled,
+    is_tmt_package,
 )
 from alws.utils.parsing import (
     parse_rpm_nevra,
@@ -207,6 +212,13 @@ async def get_available_test_tasks(session: AsyncSession) -> List[dict]:
     devel_only_packages = get_devel_only_packages(list(build_tasks.values()))
     for task in test_tasks:
         platform = task.build_task.platform
+        is_component = task.kind == TestTaskKind.COMPONENT
+        if is_component and not is_tmt_enabled(platform.name, task.env_arch):
+            # tmt has been switched off since the task was created
+            task.status = TestTaskStatus.CANCELLED
+            task.finished_at = datetime.datetime.utcnow()
+            updated_tasks.append(task)
+            continue
         module_info = get_test_task_module(task, devel_only_packages)
         module_name = module_info.name if module_info else None
         module_stream = module_info.stream if module_info else None
@@ -242,12 +254,16 @@ async def get_available_test_tasks(session: AsyncSession) -> List[dict]:
             })
         if repositories:
             payload['repositories'] = repositories
-        if test_configuration:
+        # The third-party tests of the build are for its packages, a
+        # component test task runs only tmt
+        if test_configuration and not is_component:
             if test_configuration['tests'] is None:
                 test_configuration['tests'] = []
             payload['test_configuration'] = test_configuration
         if task.skipped_tests:
             payload['skipped_tests'] = task.skipped_tests
+        if is_component and task.package_tests:
+            payload['package_tests'] = task.package_tests
         response.append(payload)
         updated_tasks.append(task)
     if updated_tasks:
@@ -312,6 +328,7 @@ def get_pulp_packages(
         [get_uuid_from_pulp_href(artifact.href) for artifact in artifacts],
         [
             RpmPackage.name,
+            RpmPackage.epoch,
             RpmPackage.version,
             RpmPackage.release,
             RpmPackage.arch,
@@ -322,18 +339,30 @@ def get_pulp_packages(
 
 async def __get_tests_config(
     build_task: models.BuildTask,
+    commit: Optional[str] = None,
 ) -> PackageTestsConfigLookup:
     source_package = get_source_package_name(build_task.ref.url)
     if not source_package:
         return PackageTestsConfigLookup()
-    return await get_package_tests_config(source_package)
+    return await get_package_tests_config(source_package, commit)
+
+
+def __get_tests_commit(task: models.TestTask) -> Optional[str]:
+    """Commit of tests/<package> the component test task tests."""
+    return (task.package_tests or {}).get('commit')
+
+
+# A test task among the others of its build task: (kind, package name).
+# The component test task is named after the source package, which may be
+# the name of a binary package too.
+TestTaskKey = Tuple[str, str]
 
 
 async def __get_passed_test_tasks(
     db: AsyncSession,
     build_task_id: int,
     revision: int,
-) -> Dict[str, models.TestTask]:
+) -> Dict[TestTaskKey, models.TestTask]:
     test_tasks = await db.execute(
         select(models.TestTask)
         .where(
@@ -343,7 +372,10 @@ async def __get_passed_test_tasks(
         )
         .options(selectinload(models.TestTask.artifacts))
     )
-    return {task.package_name: task for task in test_tasks.scalars().all()}
+    return {
+        (task.kind, task.package_name): task
+        for task in test_tasks.scalars().all()
+    }
 
 
 def __carry_over_test_task(
@@ -362,6 +394,8 @@ def __carry_over_test_task(
         revision=revision,
         repository_id=task.repository_id,
         skipped_tests=task.skipped_tests,
+        kind=task.kind,
+        package_tests=task.package_tests,
         alts_response=task.alts_response,
         scheduled_at=task.scheduled_at,
         started_at=task.started_at,
@@ -370,6 +404,100 @@ def __carry_over_test_task(
             models.TestTaskArtifact(name=artifact.name, href=artifact.href)
             for artifact in task.artifacts
         ],
+    )
+
+
+def __get_source_version(
+    pulp_packages: Dict[str, RpmPackage],
+) -> Optional[Tuple[str, str]]:
+    """(version, release) of the source package of the build task."""
+    packages = sorted(
+        pulp_packages.values(),
+        # The source RPM, if the build task has it, then any other
+        key=lambda package: package.arch != 'src',
+    )
+    if not packages:
+        return None
+    return packages[0].version, packages[0].release
+
+
+async def __create_component_test_task(
+    build_task: models.BuildTask,
+    pulp_packages: Dict[str, RpmPackage],
+    revision: int,
+    repository_id: int,
+) -> Optional[models.TestTask]:
+    """The test task that runs the tmt tests of the source package (D-3).
+
+    There is one when tmt is enabled for the platform and arch and the
+    package tests config at the head of the tests branch has tmt plans for
+    them. The task keeps that commit: ALTS tests it, and its results are
+    judged by the config at it.
+    """
+    platform_name = build_task.platform.name
+    if not is_tmt_enabled(platform_name, build_task.arch):
+        return None
+    source_package = get_source_package_name(build_task.ref.url)
+    if not source_package:
+        return None
+    commit = await get_tests_commit(source_package)
+    if not commit:
+        return None
+    lookup = await get_package_tests_config(source_package, commit)
+    if not lookup.config or not lookup.config.tmt:
+        return None
+    # Rules apply to it as to a package named after the source package
+    # (CFG-4): a rule without packages, or the one naming the source
+    # package
+    rules = get_matched_rules(
+        lookup.config,
+        source_package,
+        platform_name,
+        build_task.arch,
+    )
+    if rules.skipped_package:
+        return None
+    binary_packages = [
+        package
+        for package in pulp_packages.values()
+        if package.arch != 'src' and is_tmt_package(package.name)
+    ]
+    source_version = __get_source_version(pulp_packages)
+    if not binary_packages or not source_version:
+        return None
+    package_tests = build_package_tests_payload(
+        source_package,
+        commit,
+        lookup.config,
+        platform_name,
+        build_task.arch,
+        packages=sorted(
+            get_package_spec(
+                package.name,
+                package.epoch,
+                package.version,
+                package.release,
+                package.arch,
+            )
+            for package in binary_packages
+        ),
+        skipped_tests=rules.skipped_tests,
+    )
+    if not package_tests:
+        return None
+    version, release = source_version
+    return models.TestTask(
+        build_task_id=build_task.id,
+        kind=TestTaskKind.COMPONENT.value,
+        package_name=source_package,
+        package_version=version,
+        package_release=release,
+        env_arch=build_task.arch,
+        status=TestTaskStatus.CREATED,
+        revision=revision,
+        repository_id=repository_id,
+        skipped_tests=rules.skipped_tests or None,
+        package_tests=package_tests,
     )
 
 
@@ -441,7 +569,9 @@ async def create_test_tasks(
                 rules.skipped_package.reason,
             )
             continue
-        passed_test_task = passed_test_tasks.get(artifact_info.name)
+        passed_test_task = passed_test_tasks.get(
+            (TestTaskKind.PACKAGE.value, artifact_info.name)
+        )
         if passed_test_task:
             test_tasks.append(
                 __carry_over_test_task(passed_test_task, new_revision)
@@ -460,6 +590,27 @@ async def create_test_tasks(
         if artifact_info.release:
             task.package_release = artifact_info.release
         test_tasks.append(task)
+    passed_component_task = next(
+        (
+            task
+            for (kind, _), task in passed_test_tasks.items()
+            if kind == TestTaskKind.COMPONENT.value
+        ),
+        None,
+    )
+    if passed_component_task:
+        test_tasks.append(
+            __carry_over_test_task(passed_component_task, new_revision)
+        )
+    else:
+        component_task = await __create_component_test_task(
+            build_task,
+            pulp_packages,
+            new_revision,
+            repository_id,
+        )
+        if component_task:
+            test_tasks.append(component_task)
     if not any(task.status == TestTaskStatus.CREATED for task in test_tasks):
         # Nothing to test, all packages have passed already
         return
@@ -646,7 +797,9 @@ async def __get_test_task_status(
     result: dict,
 ) -> Tuple[TestTaskStatus, Optional[dict]]:
     build_task = task.build_task
-    lookup = await __get_tests_config(build_task)
+    # A component test task is judged by the config at the commit ALTS
+    # tested, the others by the current one
+    lookup = await __get_tests_config(build_task, __get_tests_commit(task))
     rules = get_matched_rules(
         lookup.config,
         task.package_name,
@@ -666,6 +819,10 @@ async def __get_test_task_status(
         for key in ('skipped', 'expected_failures', 'unexpected_passes'):
             if getattr(verdict, key):
                 tests_config[key] = getattr(verdict, key)
+    if verdict.tmt:
+        # Even without a config, so that the tmt summary is always there
+        tests_config = tests_config or {}
+        tests_config['tmt'] = verdict.tmt
     if verdict.failed:
         return TestTaskStatus.FAILED, tests_config
     return TestTaskStatus.COMPLETED, tests_config

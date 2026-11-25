@@ -1,0 +1,303 @@
+{
+  "initial_provision": {
+    "success": true
+  },
+  "initialize_terraform": {
+    "success": true
+  },
+  "skipped_tests": [],
+  "start_environment": {
+    "success": true
+  },
+  "stop_environment": {
+    "success": true
+  },
+  "system_info": {
+    "success": true
+  },
+  "tmt": {
+    "tmt_test_/Performance/bz587635-Speed-in-Unicode": {
+      "duration": "00:00:03",
+      "name": "/Performance/bz587635-Speed-in-Unicode",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier1/public\nDuration: 00:00:03\n\n:: [   LOG    ] :: /Performance/bz587635-Speed-in-Unicode\n:: [   PASS   ] :: RESULT: /Performance/bz587635-Speed-in-Unicode",
+      "plan": "/plans/tier1/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Regression/bz1040710-include-not-working-as-expected": {
+      "duration": "00:00:02",
+      "name": "/Regression/bz1040710-include-not-working-as-expected",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:02\n\n:: [   LOG    ] :: /Regression/bz1040710-include-not-working-as-expected\n:: [   PASS   ] :: RESULT: /Regression/bz1040710-include-not-working-as-expected",
+      "plan": "/plans/tier2-tier3/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Regression/bz1050916-malformed-output-when-coloring-is-on": {
+      "duration": "00:00:03",
+      "name": "/Regression/bz1050916-malformed-output-when-coloring-is-on",
+      "note": "",
+      "output": "Result: fail\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:03\n\n:: [   LOG    ] :: /Regression/bz1050916-malformed-output-when-coloring-is-on\n:: [   FAIL   ] :: RESULT: /Regression/bz1050916-malformed-output-when-coloring-is-on",
+      "plan": "/plans/tier2-tier3/public",
+      "result": "fail",
+      "success": false
+    },
+    "tmt_test_/Regression/bz1256756-grep-r-has-been-broken": {
+      "duration": "00:00:04",
+      "name": "/Regression/bz1256756-grep-r-has-been-broken",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:04\n\n:: [   LOG    ] :: /Regression/bz1256756-grep-r-has-been-broken\n:: [   PASS   ] :: RESULT: /Regression/bz1256756-grep-r-has-been-broken",
+      "plan": "/plans/tier2-tier3/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Regression/bz1287074-start-end-E-issue": {
+      "duration": "00:00:05",
+      "name": "/Regression/bz1287074-start-end-E-issue",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:05\n\n:: [   LOG    ] :: /Regression/bz1287074-start-end-E-issue\n:: [   PASS   ] :: RESULT: /Regression/bz1287074-start-end-E-issue",
+      "plan": "/plans/tier2-tier3/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Regression/bz1567086-grep-does-not-provide-usr-bin-grep": {
+      "duration": "00:00:06",
+      "name": "/Regression/bz1567086-grep-does-not-provide-usr-bin-grep",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:06\n\n:: [   LOG    ] :: /Regression/bz1567086-grep-does-not-provide-usr-bin-grep\n:: [   PASS   ] :: RESULT: /Regression/bz1567086-grep-does-not-provide-usr-bin-grep",
+      "plan": "/plans/tier2-tier3/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Regression/bz204255-grep-empty-pattern": {
+      "duration": "00:00:02",
+      "name": "/Regression/bz204255-grep-empty-pattern",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:02\n\n:: [   LOG    ] :: /Regression/bz204255-grep-empty-pattern\n:: [   PASS   ] :: RESULT: /Regression/bz204255-grep-empty-pattern",
+      "plan": "/plans/tier2-tier3/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Regression/bz434934-segfault-with-m-and-A": {
+      "duration": "00:00:03",
+      "name": "/Regression/bz434934-segfault-with-m-and-A",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:03\n\n:: [   LOG    ] :: /Regression/bz434934-segfault-with-m-and-A\n:: [   PASS   ] :: RESULT: /Regression/bz434934-segfault-with-m-and-A",
+      "plan": "/plans/tier2-tier3/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Regression/bz460641-korean-grep-eats-cpu": {
+      "duration": "00:00:04",
+      "name": "/Regression/bz460641-korean-grep-eats-cpu",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:04\n\n:: [   LOG    ] :: /Regression/bz460641-korean-grep-eats-cpu\n:: [   PASS   ] :: RESULT: /Regression/bz460641-korean-grep-eats-cpu",
+      "plan": "/plans/tier2-tier3/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Regression/bz574350-grep-w-broken-in-multibyte-locales": {
+      "duration": "00:00:05",
+      "name": "/Regression/bz574350-grep-w-broken-in-multibyte-locales",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:05\n\n:: [   LOG    ] :: /Regression/bz574350-grep-w-broken-in-multibyte-locales\n:: [   PASS   ] :: RESULT: /Regression/bz574350-grep-w-broken-in-multibyte-locales",
+      "plan": "/plans/tier2-tier3/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Regression/bz715295-process-grep-was-killed": {
+      "duration": "00:00:06",
+      "name": "/Regression/bz715295-process-grep-was-killed",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:06\n\n:: [   LOG    ] :: /Regression/bz715295-process-grep-was-killed\n:: [   PASS   ] :: RESULT: /Regression/bz715295-process-grep-was-killed",
+      "plan": "/plans/tier2-tier3/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Regression/bz797934-segfault-for-grep-Fie": {
+      "duration": "00:00:02",
+      "name": "/Regression/bz797934-segfault-for-grep-Fie",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:02\n\n:: [   LOG    ] :: /Regression/bz797934-segfault-for-grep-Fie\n:: [   PASS   ] :: RESULT: /Regression/bz797934-segfault-for-grep-Fie",
+      "plan": "/plans/tier2-tier3/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Regression/bz826997-broken-ignore-case-with-UTF8": {
+      "duration": "00:00:03",
+      "name": "/Regression/bz826997-broken-ignore-case-with-UTF8",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:03\n\n:: [   LOG    ] :: /Regression/bz826997-broken-ignore-case-with-UTF8\n:: [   PASS   ] :: RESULT: /Regression/bz826997-broken-ignore-case-with-UTF8",
+      "plan": "/plans/tier2-tier3/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Regression/core-dump-with-perl-regexps-on-some-binary-file": {
+      "duration": "00:00:04",
+      "name": "/Regression/core-dump-with-perl-regexps-on-some-binary-file",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:04\n\n:: [   LOG    ] :: /Regression/core-dump-with-perl-regexps-on-some-binary-file\n:: [   PASS   ] :: RESULT: /Regression/core-dump-with-perl-regexps-on-some-binary-file",
+      "plan": "/plans/tier2-tier3/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Regression/core-dump-with-recurse-and-perl-switch": {
+      "duration": "00:00:05",
+      "name": "/Regression/core-dump-with-recurse-and-perl-switch",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:05\n\n:: [   LOG    ] :: /Regression/core-dump-with-recurse-and-perl-switch\n:: [   PASS   ] :: RESULT: /Regression/core-dump-with-recurse-and-perl-switch",
+      "plan": "/plans/tier2-tier3/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Regression/grep-E-UTF-8-match": {
+      "duration": "00:00:04",
+      "name": "/Regression/grep-E-UTF-8-match",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier1/public\nDuration: 00:00:04\n\n:: [   LOG    ] :: /Regression/grep-E-UTF-8-match\n:: [   PASS   ] :: RESULT: /Regression/grep-E-UTF-8-match",
+      "plan": "/plans/tier1/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Regression/grep-Fw-loop": {
+      "duration": "00:00:06",
+      "name": "/Regression/grep-Fw-loop",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:06\n\n:: [   LOG    ] :: /Regression/grep-Fw-loop\n:: [   PASS   ] :: RESULT: /Regression/grep-Fw-loop",
+      "plan": "/plans/tier2-tier3/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Regression/grep-mem": {
+      "duration": "00:00:02",
+      "name": "/Regression/grep-mem",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:02\n\n:: [   LOG    ] :: /Regression/grep-mem\n:: [   PASS   ] :: RESULT: /Regression/grep-mem",
+      "plan": "/plans/tier2-tier3/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Regression/grep-slow-UTF-8": {
+      "duration": "00:00:03",
+      "name": "/Regression/grep-slow-UTF-8",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:03\n\n:: [   LOG    ] :: /Regression/grep-slow-UTF-8\n:: [   PASS   ] :: RESULT: /Regression/grep-slow-UTF-8",
+      "plan": "/plans/tier2-tier3/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Regression/grep-w": {
+      "duration": "00:00:05",
+      "name": "/Regression/grep-w",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier1/public\nDuration: 00:00:05\n\n:: [   LOG    ] :: /Regression/grep-w\n:: [   PASS   ] :: RESULT: /Regression/grep-w",
+      "plan": "/plans/tier1/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Regression/inconsistent-w-and-alnum-behaviour": {
+      "duration": "00:00:04",
+      "name": "/Regression/inconsistent-w-and-alnum-behaviour",
+      "note": "",
+      "output": "Result: fail\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:04\n\n:: [   LOG    ] :: /Regression/inconsistent-w-and-alnum-behaviour\n:: [   FAIL   ] :: RESULT: /Regression/inconsistent-w-and-alnum-behaviour",
+      "plan": "/plans/tier2-tier3/public",
+      "result": "fail",
+      "success": false
+    },
+    "tmt_test_/Regression/lowercase-uppercase-wrong-searching": {
+      "duration": "00:00:05",
+      "name": "/Regression/lowercase-uppercase-wrong-searching",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:05\n\n:: [   LOG    ] :: /Regression/lowercase-uppercase-wrong-searching\n:: [   PASS   ] :: RESULT: /Regression/lowercase-uppercase-wrong-searching",
+      "plan": "/plans/tier2-tier3/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Regression/slow-grep-v-f-between-two-files": {
+      "duration": "00:00:06",
+      "name": "/Regression/slow-grep-v-f-between-two-files",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier1/public\nDuration: 00:00:06\n\n:: [   LOG    ] :: /Regression/slow-grep-v-f-between-two-files\n:: [   PASS   ] :: RESULT: /Regression/slow-grep-v-f-between-two-files",
+      "plan": "/plans/tier1/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Regression/word-boundary-error-near-an-utf8-character": {
+      "duration": "00:00:07",
+      "name": "/Regression/word-boundary-error-near-an-utf8-character",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier1/public\nDuration: 00:00:07\n\n:: [   LOG    ] :: /Regression/word-boundary-error-near-an-utf8-character\n:: [   PASS   ] :: RESULT: /Regression/word-boundary-error-near-an-utf8-character",
+      "plan": "/plans/tier1/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Sanity/grep-Fw-ASCII": {
+      "duration": "00:00:06",
+      "name": "/Sanity/grep-Fw-ASCII",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:06\n\n:: [   LOG    ] :: /Sanity/grep-Fw-ASCII\n:: [   PASS   ] :: RESULT: /Sanity/grep-Fw-ASCII",
+      "plan": "/plans/tier2-tier3/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Sanity/grep-P-crash": {
+      "duration": "00:00:02",
+      "name": "/Sanity/grep-P-crash",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier2-tier3/public\nDuration: 00:00:02\n\n:: [   LOG    ] :: /Sanity/grep-P-crash\n:: [   PASS   ] :: RESULT: /Sanity/grep-P-crash",
+      "plan": "/plans/tier2-tier3/public",
+      "result": "pass",
+      "success": true
+    },
+    "tmt_test_/Sanity/smoke-test": {
+      "duration": "00:00:08",
+      "name": "/Sanity/smoke-test",
+      "note": "",
+      "output": "Result: pass\nPlan: /plans/tier1/public\nDuration: 00:00:08\n\n:: [   LOG    ] :: /Sanity/smoke-test\n:: [   PASS   ] :: RESULT: /Sanity/smoke-test",
+      "plan": "/plans/tier1/public",
+      "result": "pass",
+      "success": true
+    }
+  },
+  "tmt_tests": {
+    "commit": "1531e510fe5f35bef344c637fefced85038c69f7",
+    "context": {
+      "arch": "x86_64",
+      "component": "grep",
+      "distro": "almalinux-9.9,centos-stream-9,rhel-9.9",
+      "initiator": "albs",
+      "trigger": "build"
+    },
+    "counts": {
+      "fail": 2,
+      "pass": 25
+    },
+    "excluded_plans": [],
+    "installed_packages": [
+      "grep-3.6-5.el9.x86_64"
+    ],
+    "plans": [
+      {
+        "counts": {
+          "pass": 6
+        },
+        "name": "/plans/tier1/public"
+      },
+      {
+        "counts": {
+          "fail": 2,
+          "pass": 19
+        },
+        "name": "/plans/tier2-tier3/public"
+      },
+      {
+        "counts": {},
+        "name": "/plans/others/public"
+      }
+    ],
+    "success": true,
+    "tmt_exit_code": 1,
+    "url": "https://git.almalinux.org/tests/grep.git"
+  }
+}
